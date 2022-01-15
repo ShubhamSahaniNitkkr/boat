@@ -1,4 +1,4 @@
-import { GET_USERS, GET_PROFILE, SET_LOADING } from "../Types";
+import { GET_USERS, GET_PROFILE, SET_LOADING } from "./Types";
 export default (state, action) => {
   switch (action.type) {
     case GET_USERS:
