@@ -1,7 +1,7 @@
 import React from 'react';
 
 const VlogWidget = () => {
-  return <div></div>;
+  return <div>VlogWidget</div>;
 };
 
 export default VlogWidget;
