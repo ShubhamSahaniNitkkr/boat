@@ -30,7 +30,7 @@ npm install && npm run dev
 
 ## Live Demo
 
-[https://shubhamsahaniNitkkr.github.io/old-basic-projects/projects/boat/](https://shubhamsahaniNitkkr.github.io/old-basic-projects/projects/boat/)
+[https://shubhamsahaniNitkkr.github.io/boat/](https://shubhamsahaniNitkkr.github.io/boat/)
 
 
 ## Performance & UI
