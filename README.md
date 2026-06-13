@@ -2,7 +2,8 @@
 
 > Search GitHub users and browse their profiles and repositories with client-side routing.
 
-![Screenshot](./screenshot.png)
+<img width="4480" height="2344" alt="image" src="https://github.com/user-attachments/assets/420b9061-5d93-4b4b-96e7-bc7d0f5285ce" />
+
 > Add `screenshot.png` in project root for preview.
 
 ## Purpose
