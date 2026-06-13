@@ -16,16 +16,16 @@ export const VlogCard = () => {
         <div className="w3-col m12">
           <div className="w3-card w3-round w3-white">
             <div className="w3-container pt-3 pb-3">
-              <div class="input-group">
+              <div className="input-group">
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   placeholder="Search for the vlogs by their Author name ..."
                   aria-label="Search for the vlogs"
                   aria-describedby="basic-addon2"
                   onChange={(e) => searchVlogs(e.target.value)}
                 />
-                <div class="input-group-append">
+                <div className="input-group-append">
                   <button
                     type="button"
                     className="btn btn-info w3-theme"
@@ -44,8 +44,8 @@ export const VlogCard = () => {
           No matching vlogs exist
         </div>
       )}
-      {vlogs.map(({ name, createdAt, content, avatar, images = [] }) => (
-        <div className="w3-container w3-card w3-white w3-round w3-margin p-3">
+      {vlogs.map(({ name, createdAt, content, avatar, images = [] }, idx) => (
+        <div key={`${name}-${idx}`} className="w3-container w3-card w3-white w3-round w3-margin p-3">
           <img
             src={avatar}
             alt="Avatar"
@@ -56,16 +56,14 @@ export const VlogCard = () => {
           <h4 className="mt-4">{name}</h4>
           <hr className="w3-clear" />
           <p>{content}</p>
-          <div className="w3-row-padding" style={{ margin: '0 -16px' }}>
-            {images.map((img) => (
-              <div className="w3-half">
-                <img
-                  src={img}
-                  style={{ width: '100%' }}
-                  alt="Northern Lights"
-                  className="w3-margin-bottom"
-                />
-              </div>
+          <div className="vlog-images-row">
+            {images.map((img, imgIdx) => (
+              <img
+                key={imgIdx}
+                src={img}
+                alt=""
+                className="w3-margin-bottom"
+              />
             ))}
           </div>
           <button type="button" className="w3-button w3-theme-d1">

@@ -28,8 +28,6 @@ Search GitHub users and browse their profiles and repositories with client-side 
 npm install && npm run dev
 ```
 
-> On Node 17+, if build fails: `export NODE_OPTIONS=--openssl-legacy-provider`
-
 ## Live Demo
 
 [https://shubhamsahaniNitkkr.github.io/old-basic-projects/projects/boat/](https://shubhamsahaniNitkkr.github.io/old-basic-projects/projects/boat/)

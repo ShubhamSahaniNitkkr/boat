@@ -36,7 +36,7 @@ const Header = ({ title }) => {
         </Link>
         <Link
           to="/aboutUs"
-          className="w3-bar-item w3-button w3-hide-small w3-right w3-hover-white"
+          className="w3-bar-item w3-button w3-right w3-hover-white w3-mobile-nav"
           title="My Account"
         >
           <img
