@@ -9,11 +9,12 @@ import Aboutus from './components/pages/AboutUs';
 import NotFound from './components/pages/NotFound';
 // context
 import BoatState from './services/actions';
+import getBasename from './getBasename';
 
 const App = () => {
   return (
     <BoatState>
-      <Router>
+      <Router basename={getBasename()}>
         <div className="App">
           <Header title="Boat" />
           <Routes>

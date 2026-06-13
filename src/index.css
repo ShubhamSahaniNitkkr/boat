@@ -1,4 +1,26 @@
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+body { overflow-x: hidden; }
+@media (max-width: 768px) { .container { padding: 0 12px; } }
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   background: #e5eff1;
+}
+
+@media (max-width: 768px) {
+  .w3-content {
+    margin-top: 64px !important;
+    padding: 0 8px;
+  }
+
+  .w3-col.m3,
+  .w3-col.m7,
+  .w3-col.m2 {
+    width: 100% !important;
+  }
+
+  .w3-bar-item {
+    padding: 8px 12px !important;
+  }
 }

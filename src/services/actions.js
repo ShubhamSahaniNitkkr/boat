@@ -1,6 +1,4 @@
-/* eslint-disable no-unused-vars */
 import React, { useReducer } from 'react';
-import axios from 'axios';
 import GFcontext from './context';
 import GFreducer from './reducer';
 import { GET_VLOGS, GET_PROFILE, SET_LOADING } from './Types';
@@ -42,7 +40,6 @@ const GFaction = (props) => {
   }
 
   const searchVlogs = async (text) => {
-    console.log(text, vlogsData);
     setloading();
     // const res = await axios.get(
     //   `https://api.github.com/search/users?q=${text}`
@@ -54,11 +51,8 @@ const GFaction = (props) => {
     dispatch({ type: GET_VLOGS, payload: result });
   };
 
-  const getUserProfile = async (username) => {
+  const getUserProfile = async () => {
     setloading();
-    const res = await axios.get(
-      `https://api.github.com/search/users?q='shubhamSunny'`
-    );
     dispatch({
       type: GET_PROFILE,
       payload: {
